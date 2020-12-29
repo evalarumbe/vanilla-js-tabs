@@ -1,12 +1,8 @@
-.pink { color: hotpink }
-.gold { color: gold }
-
 .tab-controls [role=tab] {
   font-family: monospace;
   
   &.active-tab-control {
     font-weight: bold;
-    color: #5558B4;
   }
 }
 

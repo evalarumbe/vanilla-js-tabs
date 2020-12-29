@@ -1,22 +1,21 @@
-.pink {
-  color: hotpink;
-}
-
-.gold {
-  color: gold;
-}
-
 .tab-controls [role=tab] {
   font-family: monospace;
 }
 .tab-controls [role=tab].active-tab-control {
   font-weight: bold;
-  color: #5558B4;
 }
 
 /* hide non-active nested tab content */
 .tab-panel:not(.active-tab-panel) {
   opacity: 0;
+}
+
+.cherry {
+  color: #f45;
+}
+
+.gold {
+  color: #fd2;
 }
 
 /*# sourceMappingURL=style.css.map */
