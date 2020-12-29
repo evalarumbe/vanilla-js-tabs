@@ -8,21 +8,24 @@
 </head>
 <body>
   
-<h2>Vanilla JS tabs</h2>
+<h1>Vanilla JS tabs</h1>
 
 <div class="tab-container cherry">
   <ul class="tab-controls">
     <li><button aria-controls="first" role="tab">First</button></li>
     <li><button aria-controls="second" role="tab">Second</button></li>
   </ul>
-  
-  <section id="first" class="tab-panel">
-    <h2>First</h2>
-  </section>
-  
-  <section id="second" class="tab-panel">
-    <h2>Second</h2> 
-  </section>
+  <div class="tab-panels">
+    <section id="first" class="tab-panel">
+      <h2>First</h2>
+      <p>First tab</p>
+    </section>
+    
+    <section id="second" class="tab-panel">
+      <h2>Second</h2> 
+      <p>Second tab</p>
+    </section>
+  </div>
 </div>
 
 <div class="tab-container gold">
@@ -31,18 +34,22 @@
     <li><button aria-controls="two" role="tab">Two</button></li>
     <li><button aria-controls="three" role="tab">Three</button></li>
   </ul>
-  
-  <section id="one" class="tab-panel">
-    <h2>One</h2>
-  </section>
-  
-  <section id="two" class="tab-panel">
-    <h2>Two</h2> 
-  </section>
-  
-  <section id="three" class="tab-panel">
-    <h2>Three</h2> 
-  </section>
+  <div class="tab-panels">
+    <section id="one" class="tab-panel">
+      <h2>One</h2>
+      <p>Tab one</p>
+    </section>
+    
+    <section id="two" class="tab-panel">
+      <h2>Two</h2>
+      <p>Tab two</p>
+    </section>
+    
+    <section id="three" class="tab-panel">
+      <h2>Three</h2>
+      <p>Tab three</p>
+    </section>
+  </div>
 </div>
 
 <script src="./tabs.js"></script>

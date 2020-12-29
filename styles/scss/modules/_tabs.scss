@@ -1,0 +1,37 @@
+.tab-container {
+  position: relative;
+  height: 30vh;
+  margin-bottom: 1rem;
+}
+
+.tab-controls {
+  margin: 0;
+  display: flex;
+
+  li {
+    flex-grow: 1;
+    list-style-type: none;
+    display: inline-block;
+
+    button {
+      appearance: none;
+      width: 100%;
+      padding: 0.5ch;
+      font-size: 2rem;
+      background-color: rgba(0,0,0,0);
+      border: 0;
+    }
+  }
+}
+
+.tab-panels {
+  .tab-panel {    
+    position: absolute;
+    padding: 2rem;
+
+    /* hide non-active nested tab content */
+    &:not(.active-tab-panel) {
+      opacity: 0;
+    }
+  }
+}

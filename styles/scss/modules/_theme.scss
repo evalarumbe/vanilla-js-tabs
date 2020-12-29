@@ -1,9 +1,19 @@
 @use '../variables/color.scss' as *;
 
+.tab-controls [role=tab] {
+  font-family: monospace;
+  
+  &.active-tab-control {
+    font-weight: bold;
+  }
+}
+
 .cherry {
   color: $cherry;
+  background-color: rgb(192, 112, 216);
 }
 
 .gold {
   color: $gold;
+  background-color: rgb(195, 238, 170);
 }
