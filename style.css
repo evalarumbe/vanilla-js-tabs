@@ -1,10 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 html {
   font-size: 100%;
+  background: #f45 no-repeat fixed;
+  background: linear-gradient(to bottom right, #f45, #fd2) no-repeat fixed;
 }
 
 body {
@@ -12,16 +15,19 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  color: white;
   font-size: 3rem;
   padding: 1.5rem 2rem 1rem;
   text-align: center;
 }
 
 h2 {
-  font-family: monospace;
   font-size: 3rem;
   padding: 1rem 0;
+}
+
+p {
+  font-size: 2rem;
 }
 
 .tab-container {
@@ -39,13 +45,16 @@ h2 {
   list-style-type: none;
   display: inline-block;
 }
-.tab-controls li button {
+.tab-controls li button[role=tab] {
   appearance: none;
   width: 100%;
   padding: 0.5ch;
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
+}
+.tab-controls li button[role=tab].active-tab-control {
+  font-weight: bold;
 }
 
 .tab-panels .tab-panel {
@@ -55,23 +64,6 @@ h2 {
 }
 .tab-panels .tab-panel:not(.active-tab-panel) {
   opacity: 0;
-}
-
-.tab-controls [role=tab] {
-  font-family: monospace;
-}
-.tab-controls [role=tab].active-tab-control {
-  font-weight: bold;
-}
-
-.cherry {
-  color: #f45;
-  background-color: #c070d8;
-}
-
-.gold {
-  color: #fd2;
-  background-color: #c3eeaa;
 }
 
 /*# sourceMappingURL=style.css.map */

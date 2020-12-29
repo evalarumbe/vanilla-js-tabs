@@ -13,13 +13,17 @@
     list-style-type: none;
     display: inline-block;
 
-    button {
+    button[role=tab] {
       appearance: none;
       width: 100%;
       padding: 0.5ch;
       font-size: 2rem;
       background-color: rgba(0,0,0,0);
       border: 0;
+
+      &.active-tab-control {
+        font-weight: bold;
+      }
     }
   }
 }

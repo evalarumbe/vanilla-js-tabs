@@ -1,6 +1,9 @@
+@use '../variables/color' as *;
+
 * {
   margin: 0;
   padding: 0;
+  font-family: monospace;
 }
 
 html {
@@ -8,6 +11,9 @@ html {
   // rem will be based on user's preference
   // read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 100%;
+  
+  background: $cherry no-repeat fixed;
+  background: linear-gradient(to bottom right, $cherry, $gold) no-repeat fixed;
 }
 
 body { 
@@ -15,14 +21,17 @@ body {
 }
 
 h1 {
-  font-family: monospace;
+  color: white;
   font-size: 3rem;
   padding: 1.5rem 2rem 1rem;
   text-align: center;
 }
 
 h2 {
-  font-family: monospace;
   font-size: 3rem;
   padding: 1rem 0;
+}
+
+p {
+  font-size: 2rem;
 }
