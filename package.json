@@ -1,0 +1,22 @@
+{
+  "name": "tabs-demo",
+  "version": "1.0.0",
+  "description": "This is a custom WP theme for FOH Agency based on Enfold",
+  "main": "index.js",
+  "scripts": {
+    "dev": "dart-sass --watch ./styles/scss/main.scss ./style.css",
+    "prebuild": "rm ./style.css.map && dart-sass --no-source-map ./styles/scss/main.scss ./styles/style.css",
+    "build": "postcss styles/style.css --use autoprefixer -o ./style.css"
+  },
+  "author": "Eva Larumbe",
+  "license": "ISC",
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "dart-sass": "^1.25.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
+  }
+}
