@@ -10,18 +10,20 @@
   
 <h2>Vanilla JS tabs</h2>
 
-<ul class="tab-controls">
-  <li><button aria-controls="first" role="tab">First</button></li>
-  <li><button aria-controls="second" role="tab">Second</button></li>
-</ul>
-
-<section id="first" class="tab-panel">
-  <h2>First</h2>
-</section>
-
-<section id="second" class="tab-panel">
-  <h2>Second</h2> 
-</section>
+<div class="tab-container">
+  <ul class="tab-controls">
+    <li><button aria-controls="first" role="tab">First</button></li>
+    <li><button aria-controls="second" role="tab">Second</button></li>
+  </ul>
+  
+  <section id="first" class="tab-panel">
+    <h2>First</h2>
+  </section>
+  
+  <section id="second" class="tab-panel">
+    <h2>Second</h2> 
+  </section>
+</div>
 
 <script src="./tabs.js"></script>
 </body>
