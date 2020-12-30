@@ -1,7 +1,7 @@
 {
   "name": "tabs-demo",
   "version": "1.0.0",
-  "description": "This is a custom WP theme for FOH Agency based on Enfold",
+  "description": "An experiment with tabs in vanilla JS",
   "main": "index.js",
   "scripts": {
     "dev": "dart-sass --watch ./styles/scss/main.scss ./style.css",
