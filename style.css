@@ -5,12 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
+  color: #200003;
 }
 
 html {
   font-size: 100%;
   letter-spacing: 0.02ch;
-  color: black;
   background: #f45 no-repeat fixed;
   background: linear-gradient(to bottom right, #f45, #fd2) no-repeat fixed;
   overflow-x: hidden;
@@ -55,15 +55,15 @@ a {
 }
 a:hover {
   text-decoration: underline;
-  color: #f45;
+  color: #ff7c88;
 }
 a:active {
   text-decoration: underline;
-  color: #f45;
+  color: #e20015;
 }
 a:visited {
   text-decoration: none;
-  color: #f45;
+  color: #e20015;
 }
 
 .contact {
@@ -72,7 +72,7 @@ a:visited {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .contact h2 {
-  color: black;
+  color: #200003;
   font-weight: normal;
 }
 .contact a {

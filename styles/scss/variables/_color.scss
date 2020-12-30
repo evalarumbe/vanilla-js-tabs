@@ -1,7 +1,9 @@
-@use "sass:color" as *;
+@use "sass:color";
 
-$watermelon: #f45;
 $sunflower: #fd2;
+$watermelon: #f45;
+$watermelon-dark: color.scale($watermelon, $lightness: -30%);
+$watermelon-light: color.scale($watermelon, $lightness: +30%);
 
-$body-text: black; // TODO: dark cherry
+$body-text: color.scale($watermelon, $lightness: -90%);
 $body-text-bg: rgba(255, 255, 255, 0.9);

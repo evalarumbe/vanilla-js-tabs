@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Raleway, sans-serif;
+  color: $body-text;
 }
 
 html {
@@ -16,7 +17,6 @@ html {
   // read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 100%;
   letter-spacing: 0.02ch;
-  color: $body-text;
   
   background: $watermelon no-repeat fixed;
   background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
@@ -62,16 +62,16 @@ a {
 
   &:hover {
     text-decoration: underline;
-    color: $watermelon; // TODO: lighter
+    color: $watermelon-light;
   }
   &:active {
     text-decoration: underline;
-    color: $watermelon; // TODO: darker
+    color: $watermelon-dark;
   }
 
   &:visited {
     text-decoration: none;
-    color: $watermelon; // TODO: darker
+    color: $watermelon-dark;
   }
 }
 
