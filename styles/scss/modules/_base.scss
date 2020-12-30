@@ -29,16 +29,17 @@ body {
 
 h1, h2 {
   color: white;
-  padding: 1.5rem 2rem 1rem;
 }
 
 h1 {
+  padding: 2rem 2rem 0;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
 }
 
 h2 {
+  padding: 1.5rem 2rem 1rem;
   font-size: 1.5rem;
 }
 
@@ -83,6 +84,7 @@ a {
   h2 {
     color: $body-text;
     font-weight: normal;
+    padding-bottom: 0;
   }
   
   a {
