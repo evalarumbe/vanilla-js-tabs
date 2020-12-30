@@ -1,7 +1,7 @@
 @use '../variables/color' as *;
 
 .tab-container {
-  min-height: 30vh;
+  // min-height: 20rem;
   margin-bottom: 1.5rem;
   background-color: rgba(255, 255, 255, 0.4);
   display: flex;
@@ -34,20 +34,23 @@
   }
 
   .tab-panels {
-    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
     background-color: $body-text-bg;
   
-    .tab-panel {    
-      position: absolute;
+    .tab-panel {
       padding: 1rem 2rem 2rem;
-      display: flex;
-      flex-flow: column nowrap;
       width: 100%;
+
+      &.active-tab-panel {
+        order: -1;
+      }
   
       /* hide non-active nested tab content */
       &:not(.active-tab-panel) {
-        opacity: 0;
+        display: none; // TODO: stop layout shift
         z-index: -1;
+        order: initial;
       }
     }
   }
