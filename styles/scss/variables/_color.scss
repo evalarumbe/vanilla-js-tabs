@@ -1,4 +1,7 @@
 @use "sass:color" as *;
 
-$cherry: #f45;
-$gold: #fd2;
+$watermelon: #f45;
+$sunflower: #fd2;
+
+$body-text: black; // TODO: dark cherry
+$body-text-bg: rgba(255, 255, 255, 0.9);

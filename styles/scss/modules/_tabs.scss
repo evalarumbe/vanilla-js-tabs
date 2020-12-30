@@ -1,41 +1,54 @@
+@use '../variables/color' as *;
+
 .tab-container {
-  position: relative;
-  height: 30vh;
-  margin-bottom: 1rem;
-}
-
-.tab-controls {
-  margin: 0;
+  min-height: 30vh;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
   display: flex;
+  flex-flow: column nowrap;
+  
+  .tab-controls {
+    margin: 0;
+    display: flex;
 
-  li {
-    flex-grow: 1;
-    list-style-type: none;
-    display: inline-block;
+    li {
+      flex-grow: 1;
+      list-style-type: none;
+      display: inline-block;
 
-    button[role=tab] {
-      appearance: none;
-      width: 100%;
-      padding: 0.5ch;
-      font-size: 2rem;
-      background-color: rgba(0,0,0,0);
-      border: 0;
+      button[role=tab] {
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        padding: 1ch;
+        font-size: 1.2rem;
+        background-color: rgba(0,0,0,0);
+        border: 0;
 
-      &.active-tab-control {
-        font-weight: bold;
+        &.active-tab-control {
+          font-weight: bold;
+          background-color: $body-text-bg;
+        }
       }
     }
   }
-}
 
-.tab-panels {
-  .tab-panel {    
-    position: absolute;
-    padding: 2rem;
-
-    /* hide non-active nested tab content */
-    &:not(.active-tab-panel) {
-      opacity: 0;
+  .tab-panels {
+    flex-grow: 1;
+    background-color: $body-text-bg;
+  
+    .tab-panel {    
+      position: absolute;
+      padding: 1rem 2rem 2rem;
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100%;
+  
+      /* hide non-active nested tab content */
+      &:not(.active-tab-panel) {
+        opacity: 0;
+        z-index: -1;
+      }
     }
   }
 }
