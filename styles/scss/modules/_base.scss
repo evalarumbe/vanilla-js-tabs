@@ -16,15 +16,14 @@ html {
   // rem will be based on user's preference
   // read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 100%;
-  letter-spacing: 0.02ch;
-  
-  background: $watermelon no-repeat fixed;
-  background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
-  overflow-x: hidden;
 }
 
 body { 
   max-width: 100vw;
+  overflow-x: hidden;
+  background: $watermelon no-repeat fixed;
+  background: linear-gradient(to bottom right, $watermelon, $sunflower) no-repeat fixed;
+  letter-spacing: 0.02ch;
 }
 
 h1, h2 {
