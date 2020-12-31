@@ -15,7 +15,11 @@ html {
   // a11y: 100% of user agent font size means
   // rem will be based on user's preference
   // read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
-  font-size: 100%;
+  font-size: 80%;
+
+  @media (min-width: 480px) {
+    font-size: 100%;
+  }
 }
 
 body { 
@@ -55,6 +59,11 @@ p {
   letter-spacing: 0;
 }
 
+code {
+  display: inline-block;
+  font-family: monospace;
+}
+
 a {
   color: $watermelon;
   padding-bottom: 1px;
@@ -76,7 +85,8 @@ a {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem 1rem 2rem;
+  margin-top: 4rem;
+  padding: 1rem 1rem 4rem;
   background-color: $body-text-bg;
+  text-align: center;
 }

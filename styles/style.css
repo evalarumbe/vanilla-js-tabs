@@ -9,7 +9,12 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 80%;
+}
+@media (min-width: 480px) {
+  html {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -49,6 +54,11 @@ p {
   letter-spacing: 0;
 }
 
+code {
+  display: inline-block;
+  font-family: monospace;
+}
+
 a {
   color: #f45;
   padding-bottom: 1px;
@@ -68,9 +78,10 @@ a:visited {
 }
 
 footer {
-  text-align: center;
-  padding: 1rem 1rem 2rem;
+  margin-top: 4rem;
+  padding: 1rem 1rem 4rem;
   background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 
 .tab-container {
