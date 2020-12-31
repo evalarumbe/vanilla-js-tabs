@@ -12,9 +12,9 @@
 }
 
 html {
-  // a11y: 100% of user agent font size means
-  // rem will be based on user's preference
-  // read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
+  // a11y: By setting a % of the user agent font size,
+  // rem will be based on user's preference.
+  // Read more: https://matejlatin.medium.com/5-keys-to-accessible-web-typography-2ff9de3157f5
   font-size: 80%;
 
   @media (min-width: 480px) {
