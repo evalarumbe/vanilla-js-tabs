@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "dart-sass --watch ./styles/scss/main.scss ./style.css",
-    "prebuild": "rm ./style.css.map && dart-sass --no-source-map ./styles/scss/main.scss ./styles/style.css",
+    "prebuild": "rm ./style.css.map && dart-sass --style compressed --no-source-map ./styles/scss/main.scss ./styles/style.css",
     "build": "postcss styles/style.css --use autoprefixer -o ./style.css"
   },
   "author": "Eva Larumbe",
